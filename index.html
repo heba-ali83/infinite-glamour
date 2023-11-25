@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Carousel Template · Bootstrap v5.3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/horizontal_cards.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body>
+
+    <!-- header-start -->
+    <header data-bs-theme="Light">
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-dark bg-opacity-75 position-fixed z-2 w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="rounded rounded-4"
+              src="images/logo.png" alt style="max-height: 60px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Brands</a>
+              </li>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Makeup</a></li>
+                  <li><a class="dropdown-item" href="#">Skincare</a></li>
+                  <li><a class="dropdown-item" href="#">Fragrance</a></li>
+                </ul>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search"
+                placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary me-2" type="submit">Search</button>
+            </form>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              Log in
+            </button>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- headr-end -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+      data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Log in</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your
+                  email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control"
+                  id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input"
+                  id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary me-auto"
+              data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+
+    <main>
+      <!-- carousel start -->
+      <div id="myCarousel" class="carousel slide mb-1" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel"
+            data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel"
+            data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel"
+            data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slide1.png" width="100%" alt="slide1">
+
+            <div class="container">
+              <div class="carousel-caption text-start for-hide">
+                <h1>Welcome beauty</h1>
+                <p class="opacity-75">We believe that beauty thrives in
+                  diversity and discovery</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide2.png" width="100%" alt="slide2">
+
+            <div class="container">
+              <div class="carousel-caption for-hide">
+
+                <h1>Our purpose</h1>
+                <p>Our purpose is to expand the way the world sees beauty by
+                  empowering the ExtraOrdinary in each of us</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide3.png" width="100%" alt="slide3">
+
+            <div class="container">
+              <div class="carousel-caption text-end for-hide">
+                <h1>We care about the world of beauty</h1>
+                <p>We believe in a world where each one of us feels celebrated
+                  for who we are, not what others would like us to be.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- carousel end -->
+
+      <!-- product selection start -->
+      <!-- accordion -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <h5 class="w-100 text-center">PRODUCT SELECTION</h5>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="container marketing">
+
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="/images/1.png"
+                      class="bd-placeholder-img rounded-circle" width="140"
+                      height="140" />
+                    <h4 class="fw-normal">CHALLENGING THE STATUS QUO</h4>
+                    <p>We amplify beauty by creating a more inclusive space for
+                      everyone, every day.
+                      We discover new brands and products to help everyone find
+                      their version of beauty.
+                      <p><a class="btn btn-secondary" href="#">View details
+                          &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                      <img src="/images/2.png"
+                        class="bd-placeholder-img rounded-circle" width="140"
+                        height="140" />
+                      <h4 class="fw-normal">DSCOVERING THE BEST IN BEAUTY</h4>
+                      <p>Our experts are passionate about combining classic
+                        brands with inspiring new lines, so we can constantly
+                        provide more vision and innovation for our customers.</p>
+                      <p><a class="btn btn-secondary" href="#">View details
+                          &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                      <img src="/images/3.png"
+                        class="bd-placeholder-img rounded-circle" width="140"
+                        height="140" />
+                      <h4 class="fw-normal">RESPONSIBLE BEAUTY</h4>
+                      <p>We are committed to promote responsible products and
+                        formulas, and to elevate sustainable sourcing and
+                        transparency in formulation and packaging.</p>
+                      <p><a class="btn btn-secondary" href="#">View details
+                          &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                  </div><!-- /.row -->
+                </div>
+              </div>
+            </div>
+          </div> <br> <br>
+          <!-- product selection end -->
+        </div>
+
+        <div class="container-xl py-2 ">
+
+          <article class="postcard d-flex light blue">
+            <!-- 1st card -->
+            <a class="postcard__img-link" href="#">
+              <img class="postcard__img" src="images/6-1.png" alt="Image Title" />
+            </a>
+            <div class="postcard__text t-dark">
+              <h1 class="postcard__title blue"><a href="#">Our Goal</a></h1>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                An Inspiring Brand That Is Always
+                On The Move,
+                Unleash Everyone's ExtraOrdinary By Facilitating The
+                Access To Beauty With Trusted Products That Truly Deliver,
+                Easy To Use And Accessible To All. <br>From the very
+                beginning, our founder believed that Sephora could not
+                only disrupt beauty retail, but that it would have a
+                positive impact on the world.
+              </div>
+            </div>
+          </article> <!-- /1st card -->
+
+          <article class="postcard d-flex light blue">
+            <!-- 2nd card -->
+            <a class="postcard__img-link" href="#">
+              <img class="postcard__img" src="images/6-2.png" alt="Image Title" />
+            </a>
+            <div class="postcard__text t-dark">
+              <h1 class="postcard__title blue"><a href="#">Our Mission</a></h1>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                We believe that beauty thrives in
+                diversity and discovery.
+                Our purpose is to expand the way the world sees beauty by
+                empowering the ExtraOrdinary in each of us. <br>To Make
+                Responsible And High-Performance Beauty Easy To Use And
+                Accessible To All. Serving our customers has been our
+                obssession since the beginning.
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- picture-bg -->
+        <div class="picture-bg-">
+          <div class="picture-bg-front">
+            <div class="picture-bg">
+            </div>
+          </div>
+        </div>
+
+        <!-- our products start -->
+        <main class="our-products container-xl">
+          <div class="hair item-card">
+            <div class="card-img">
+              <img src="/images/hair.png" class="hair-img" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title mt-3">Hair</h5>
+              <p class="card-text">Now you can have the hair of your dreams.</p>
+              <br>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+
+          </div>
+
+          <div class="Skincare item-card">
+            <div class="card-img">
+              <img src="/images/skincare.png" class="Skincare-img" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title mt-3">Skin Care</h5>
+              <p class="card-text">A fresh, healthy-looking complexion begins
+                with skin that's in top condition.</p> <br>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="fragrance item-card">
+            <div class="card-img">
+              <img src="/images/fragrance.png" class="fragrance-img" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title mt-3">Fragrance</h5>
+              <p class="card-text">We offers all of the best-selling
+                fragrances along with a variety of new perfumes</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="makeup item-card">
+            <div class="card-img">
+              <img src="/images/makeup.png" class="makeup-img" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title mt-3">Makeup</h5>
+              <p class="card-text">An absolute beauty must-have, makeup can be
+                your best friend!</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="bathandbody item-card">
+            <div class="card-img">
+              <img src="/images/bathandbody.png" class="bathandbody-img"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title mt-3">BATH & BODY</h5>
+              <p class="card-text">For scented, refreshingly clean skin that
+                glows with beauty.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="hair item-card">
+            <div class="card-img">
+              <img src="/images/gifts.png" class="gifts-img" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title mt-3">Gifts</h5>
+              <p class="card-text">View all elegant Gifts You can share with
+                your dears.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </main>
+        <!-- our products end -->
+
+        <!-- last cards-start -->
+        <br>
+        <main>
+          <div class="container-xl  my-3 p-3">
+
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-white card-has-bg "
+                  style="background-image:url('images/card1.png');">
+
+                  <div class="card-img-overlay d-flex flex-column">
+                    <div class="card-body">
+
+                      <h4 class="card-title mt-0"><a class="text-white"
+                          href="#">Beauty November</a></h4>
+                      <small><i class="far fa-clock"></i> November 20, 2023</small>
+                    </div>
+                    <div class="card-footer">
+                      <div class="media">
+                        <img class="me-3 rounded-circle"
+                          src="images/sale3.png"
+                          alt="Generic placeholder image" style="width:100px">
+                        <div class="media-body">
+                          <h6 class="my-0 text-white d-block">New brand offers
+                            added every day!</h6>
+                          <small>Hurry Up</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-white card-has-bg "
+                  style="background-image:url('images/card2.png');">
+
+                  <div class="card-img-overlay d-flex flex-column">
+                    <div class="card-body">
+
+                      <h4 class="card-title mt-0"><a class="text-white"
+                          href="#">Beauty November</a></h4>
+                      <small><i class="far fa-clock"></i> November 20, 2023</small>
+                    </div>
+                    <div class="card-footer">
+                      <div class="media">
+                        <img class="me-3 rounded-circle sale2"
+                          src="images/sale2.png"
+                          alt="Generic placeholder image" style="width:100px">
+                        <div class="media-body">
+                          <h6 class="my-0 text-white d-block">New brand offers
+                            added every day!</h6>
+                          <small>Hurry Up</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-white card-has-bg "
+                  style="background-image:url('images/card3.png');">
+
+                  <div class="card-img-overlay d-flex flex-column">
+                    <div class="card-body">
+
+                      <h4 class="card-title mt-0"><a class="text-white"
+                          href="#">Beauty November</a></h4>
+                      <small><i class="far fa-clock"></i> November 20, 2023</small>
+                    </div>
+                    <div class="card-footer">
+                      <div class="media">
+                        <img class="me-3 rounded-circle" src="images/sale.png"
+                          alt="Generic placeholder image" style="width:100px">
+                        <div class="media-body">
+                          <h6 class="my-0 text-white d-block">New brand offers
+                            added every day!</h6>
+                          <small>Hurry Up</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </main>
+        <!-- last cards-end -->
+
+        <!--Section: Contact v.2-->
+        <section class="mb-5 container-xl">
+
+          <!--Section heading-->
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Contact
+            us</h2>
+          <div class=" text-center my-4">
+            <img class="footer-img" src="/images/twetter.jpg" alt>
+            <img class="footer-img" src="/images/whats.jpg" alt>
+            <img class="footer-img" src="/images/insta.jpg" alt>
+          </div>
+          <!--Section description-->
+          <p class="text-center w-responsive mx-auto mb-5">Do you have any
+            questions? Please do not hesitate to contact us directly. Our team
+            will come back to you within
+            a matter of hours to help you.</p>
+
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mx-auto mb-5 ">
+              <form id="contact-form" name="contact-form" action="mail.php"
+                method="POST">
+
+                <!--Grid row-->
+                <div class="row ">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="name" name="name"
+                        class="form-control">
+                      <label for="name" class>Your name</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="email" name="email"
+                        class="form-control">
+                      <label for="email" class>Your email</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <input type="text" id="subject" name="subject"
+                        class="form-control">
+                      <label for="subject" class>Subject</label>
+                    </div>
+                  </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                    <div class="md-form">
+                      <textarea type="text" id="message" name="message"
+                        rows="2" class="form-control md-textarea"></textarea>
+                      <label for="message">Your message</label>
+                    </div>
+
+                  </div>
+                </div>
+                <!--Grid row-->
+
+              </form>
+
+              <div class="text-center text-md-left">
+                <a class="btn btn-primary"
+                  onclick="document.getElementById('contact-form').submit();">Send</a>
+              </div>
+              <div class="status"></div>
+            </div>
+            <!--Grid column-->
+
+          </div>
+
+        </section>
+        <!--Section: Contact v.2-->
+
+        <!-- FOOTER -->
+        <footer class="container">
+          <p class="float-end"><a href="#">Back to top</a></p>
+          <p>&copy; 2017–2023 Infinite Glamour &middot; <a href="#">Privacy</a>
+            &middot; <a href="#">Terms</a></p>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+      </body>
+    </html>

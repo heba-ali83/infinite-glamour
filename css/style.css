@@ -1,0 +1,353 @@
+:root {
+  --main-bg-color: #F8F6F5;
+  --accent-color-01: #D7CECE;
+  --accent-color-02: #B5A8AD;
+  --accent-color-03: #8D8491;
+  --accent-color-04: #606576;
+  --sharp-color : #606576 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  max-height: 80vh;
+}
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+ 
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+
+.parent{
+    
+    width: 100%;
+    height: 500px;
+}
+
+
+
+  /* picture-bg */
+  .picture-bg{
+    background-image:url(/images/cosmetics.png);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size:101%;
+    padding-top: 50px;
+    left: 0px;
+    background-attachment: fixed;
+    opacity: .9;
+   
+  }
+
+  .picture-bg-front{
+    height: 350px;
+    margin-left: -20px;
+    margin-right: -50;
+    opacity: 0.;
+    display: block;   
+     }
+
+/* picture-bg end */
+
+
+/* our-products */
+
+.our-products{
+  margin-top: 100px;
+  height: auto;
+  padding: 15px;
+  display: grid ;
+  grid-template-columns:repeat(3, 1fr) ;
+  gap: 5% ;
+  margin-bottom: 100px;
+  }
+
+
+
+.our-products .card-img > img {
+  border-radius: 15px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.our-products .card-body {
+
+  text-transform: uppercase;
+}
+
+
+.our-products .item-card {
+  background-color: var(--main-bg-color);
+  position: relative;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  
+}
+
+
+.our-products .item-card::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: var(--accent-color-02);
+  opacity: 0.20;
+  transition: 1s;
+  border-radius: inherit;
+
+}
+.our-products .item-card:hover::after{
+  width: 100%;
+  height: 100%;
+}
+.our-products .item-card::before{
+  position: absolute;
+  content: "";
+  bottom:  0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background-color: var(--accent-color-02);
+  opacity: 0.20;
+  transition: 1s;
+  border-radius: inherit;
+
+}
+.our-products .item-card:hover::before{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* our-products */
+
+
+
+
+
+
+/* footer images */
+.footer-img{
+  display: inline-block;
+  margin: auto 0;
+  border-radius: 50%;
+}
+
+
+  
+/* cards start */
+@media (max-width: 768px) {
+  .card-has-bg {
+      min-height: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .card-has-bg {
+      min-height: 300px;
+  }
+}
+
+.card.card-has-bg {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 450px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card.card-has-bg:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+  background-size: 130%;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card-has-bg .card-footer {
+  background: none;
+  border-top: none;
+}
+.card-has-bg .card-footer .media img {
+  border: solid 2px rgba(255, 255, 255, 0.2);
+}
+
+.card-has-bg .card-body {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card-has-bg:hover .card-body {
+  margin-top: 30px;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+
+.card-has-bg .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889356) 0%,var(--accent-color-04) 100%);
+}
+
+.card-has-bg:hover .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, var(--accent-color-03) 100%);
+}
+
+.sale2{
+  width: 100px;
+  height: 100px;
+  border-radius: 50% !important;
+}
+/* cards end */
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .for-hide {
+    display: none;
+  }
+}
+
